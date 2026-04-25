@@ -47,7 +47,7 @@ def set_rules(world: "DeltaruneWorld"):
             if world.include_chapter(4):  # Chapter 4 have GlowWist have starter item so don't require it
                 set_rule(
                     multiworld.get_location(CCLocations.castle_town_spike_band_fusion, player),
-                    lambda state: state.has(Ch1Items.ironshackle, player),
+                    lambda state: state.has(Ch1Items.ironshackle, player) and state.has(Ch4Items.chapter_4_unlock, player),
                 )
             elif world.include_chapter(2):  # Chapter 2 have to gain GlowWist so require it to acquire it
                 set_rule(
