@@ -10,7 +10,7 @@
       {
         "map": "Overview",
         "x": 150,
-        "y": 110
+        "y": 790
       }
     ]
   },
@@ -24,8 +24,8 @@
     "map_locations": [
       {
         "map": "Overview",
-        "x": 150,
-        "y": 160
+        "x": 96,
+        "y": 288
       }
     ]
   },
@@ -45,8 +45,8 @@
     "map_locations": [
       {
         "map": "Overview",
-        "x": 150,
-        "y": 350
+        "x": 240,
+        "y": 288
       }
     ]
   },
@@ -73,30 +73,7 @@
           {
             "map": "Overview",
             "x": 50,
-            "y": 450
-          }
-        ]
-      },
-      {
-        "name": "Chapter 1 - Fields - Candy Trees 1&2",
-        "sections": [
-          {
-            "name": "CH1: Fields - Dark Candy Tree 1"
-          },
-          {
-            "name": "CH1: Fields - Dark Candy Tree 2"
-          }
-        ],
-        "map_locations": []
-      },
-      {
-        "name": "Chapter 1 - Fields - Candy Trees 3&4",
-        "sections": [
-          {
-            "name": "CH1: Fields - Dark Candy Tree 3"
-          },
-          {
-            "name": "CH1: Fields - Dark Candy Tree 4"
+            "y": 420
           }
         ]
       },
@@ -113,24 +90,8 @@
         "map_locations": [
           {
             "map": "Overview",
-            "x": 50,
-            "y": 550
-          }
-        ]
-      },
-      {
-        "name": "Chapter 1 - Fields - Maze of Death Chest",
-        "sections": [
-          {
-            "name": "CH1: Fields - Maze of Death Chest"
-          }
-        ]
-      },
-      {
-        "name": "Chapter 1 - Fields - Chest Before Great Board",
-        "sections": [
-          {
-            "name": "CH1: Fields - Chest Before Great Board"
+            "x": 100,
+            "y": 420
           }
         ]
       },
@@ -147,8 +108,8 @@
         "map_locations": [
           {
             "map": "Overview",
-            "x": 100,
-            "y": 450
+            "x": 50,
+            "y": 470
           }
         ]
       },
@@ -175,7 +136,7 @@
           {
             "map": "Overview",
             "x": 220,
-            "y": 475
+            "y": 470
           }
         ]
       },
@@ -190,7 +151,7 @@
           {
             "map": "Overview",
             "x": 100,
-            "y": 500
+            "y": 470
           }
         ]
       },
@@ -201,7 +162,16 @@
             "name": "CH1: Fields - Recruit Rudinn"
           },
           {
+            "name": "CH1: Fields - Lost Rudinn"
+          },
+          {
+            "name": "CH1: Fields - Lost Hathy"
+          },
+          {
             "name": "CH1: Fields - Recruit Hathy"
+          },
+          {
+            "name": "CH1: Fields - Lost Jigsawry"
           },
           {
             "name": "CH1: Fields - Recruit Jigsawry"
@@ -210,29 +180,8 @@
         "map_locations": [
           {
             "map": "Overview",
-            "x": 150,
-            "y": 500
-          }
-        ]
-      },
-      {
-        "name": "Chapter 1 - Fields - Loses",
-        "sections": [
-          {
-            "name": "CH1: Fields - Lost Rudinn"
-          },
-          {
-            "name": "CH1: Fields - Lost Hathy"
-          },
-          {
-            "name": "CH1: Fields - Lost Jigsawry"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Overview",
-            "x": 150,
-            "y": 550
+            "x": 160,
+            "y": 470
           }
         ]
       }
@@ -246,19 +195,7 @@
         "sections": [
           {
             "name": "CH1: Great Board - Recruit Ponman"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Overview",
-            "x": 50,
-            "y": 700
-          }
-        ]
-      },
-      {
-        "name": "Chapter 1 - Great Board - Loses",
-        "sections": [
+          },
           {
             "name": "CH1: Great Board - Lost Ponman"
           }
@@ -267,7 +204,7 @@
           {
             "map": "Overview",
             "x": 50,
-            "y": 750
+            "y": 690
           }
         ]
       }
@@ -283,22 +220,10 @@
             "name": "CH1: Forest - Recruit Rabbick"
           },
           {
-            "name": "CH1: Forest - Recruit Bloxer"
-          }
-        ],
-        "map_locations": [
-          {
-            "map": "Overview",
-            "x": 100,
-            "y": 700
-          }
-        ]
-      },
-      {
-        "name": "Chapter 1 - Forest - Loses",
-        "sections": [
-          {
             "name": "CH1: Forest - Lost Rabbick"
+          },
+          {
+            "name": "CH1: Forest - Recruit Bloxer"
           },
           {
             "name": "CH1: Forest - Lost Bloxer"
@@ -307,8 +232,8 @@
         "map_locations": [
           {
             "map": "Overview",
-            "x": 100,
-            "y": 750
+            "x": 150,
+            "y": 690
           }
         ]
       },
@@ -323,7 +248,7 @@
           {
             "map": "Overview",
             "x": 100,
-            "y": 650
+            "y": 690
           }
         ]
       },
@@ -352,56 +277,8 @@
         "map_locations": [
           {
             "map": "Overview",
-            "x": 150,
-            "y": 750
-          }
-        ]
-      },
-      {
-        "name": "Chapter 1 - Forest - Scissor Dancers Chest",
-        "sections": [
-          {
-            "name": "CH1: Forest - Scissor Dancers Chest"
-          }
-        ]
-      },
-      {
-        "name": "Chapter 1 - Forest - Hidden Chest Near Dancers",
-        "sections": [
-          {
-            "name": "CH1: Forest - Hidden Chest Near Dancers"
-          }
-        ]
-      },
-      {
-        "name": "Chapter 1 - Forest - Man",
-        "sections": [
-          {
-            "name": "CH1: Forest - Man"
-          }
-        ]
-      },
-      {
-        "name": "Chapter 1 - Forest - Coat Rack's Chest",
-        "sections": [
-          {
-            "name": "CH1: Forest - Coat Rack's Chest"
-          }
-        ]
-      },
-      {
-        "name": "Chapter 1 - Forest - Letter Block Chest",
-        "sections": [
-          {
-            "name": "CH1: Forest - Letter Block Chest"
-          }
-        ]
-      },
-      {
-        "name": "Chapter 1 - Forest - Chest Near Worm",
-        "sections": [
-          {
-            "name": "CH1: Forest - Chest Near Worm"
+            "x": 200,
+            "y": 690
           }
         ]
       }
@@ -423,8 +300,8 @@
         "map_locations": [
           {
             "map": "Overview",
-            "x": 200,
-            "y": 750
+            "x": 70,
+            "y": 600
           }
         ]
       },
@@ -438,8 +315,8 @@
         "map_locations": [
           {
             "map": "Overview",
-            "x": 200,
-            "y": 650
+            "x": 100,
+            "y": 640
           }
         ]
       },
@@ -459,8 +336,8 @@
         "map_locations": [
           {
             "map": "Overview",
-            "x": 200,
-            "y": 700
+            "x": 250,
+            "y": 600
           }
         ]
       }
@@ -536,8 +413,8 @@
         "map_locations": [
           {
             "map": "Overview",
-            "x": 236,
-            "y": 830
+            "x": 240,
+            "y": 914
           }
         ]
       }
