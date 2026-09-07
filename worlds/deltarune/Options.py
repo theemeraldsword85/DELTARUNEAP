@@ -130,6 +130,96 @@ class ExcludeZRankRockVideo(Toggle):
 
 # endregion
 
+# region In-Game Config
+
+
+class MasterVolume(Range):
+    """
+    sets the Master Volume so you dont have to change it at start of every chapter
+    """
+
+    display_name = "Master Volume"
+    default = 60
+    range_start = 0
+    range_end = 100
+
+
+class MusicVolume(Range):
+    """
+    sets the Music Volume so you dont have to change it at start of every chapter
+    """
+
+    display_name = "Music Volume"
+    default = 85
+    range_start = 0
+    range_end = 100
+
+
+class SFXVolume(Range):
+    """
+    sets the SFX Volume so you dont have to change it at start of every chapter
+    """
+
+    display_name = "SFX Volume"
+    default = 100
+    range_start = 0
+    range_end = 100
+
+
+class SimplifyVFX(Toggle):
+    """
+    sets the Simplify VFX setting so you dont have to change it at start of every chapter
+
+    (barely does anything)
+    """
+
+    display_name = "Simplify VFX"
+    default = 0
+
+
+class DisableShakes(Toggle):
+    """
+    sets the Disable Shakes setting so you dont have to change it at start of every chapter
+    """
+
+    display_name = "Disable Shakes"
+    default = 0
+
+
+class AutoRun(Toggle):
+    """
+    sets the Auto-Run setting so you dont have to change it at start of every chapter
+    """
+
+    display_name = "Auto-Run"
+    default = 0
+
+
+class VoiceClips(Toggle):
+    """
+    sets the Voice Clips setting so you dont have to change it at start of chapter 5
+    """
+
+    display_name = "Voice Clips"
+    default = 1
+
+
+class FeatherControls(Choice):
+    """
+    sets the Feather Controls so you dont have to change it at start of chapter 5
+
+    - **Jump X Attack Z** *Press the "Cancel" button to jump, and the "Confirm" button to attack.*
+    - **Jump Z Attack X** *Press the "Confirm" button to jump, and the "Cancel" button to attack.*
+    """
+
+    display_name = "Feather Controls"
+    option_jump_x_attack_z = 0
+    option_jump_z_attack_x = 1
+    default = option_jump_x_attack_z
+
+
+# endregion
+
 # region Chapter 3
 
 
@@ -929,6 +1019,9 @@ deltarune_option_groups = [
         "Gameplay", [BetterOdds, ItemBalancing, RemoveStartingEquipment, UnnerfPinkTwinRibbon, RockVideoSanity]
     ),
     OptionGroup(
+        "In-Game Config", [MasterVolume, MusicVolume, SFXVolume, SimplifyVFX, DisableShakes, AutoRun, VoiceClips, FeatherControls]
+    ),
+    OptionGroup(
         "Logic Difficulty",
         [SpeedrunGlitchesAsLogic, NoHitAsLogic, AnnoyingFarmingAsLogic, ExcludeZRankRockVideo, ExcludeTRankRockVideo],
     ),
@@ -1021,6 +1114,16 @@ class DeltaruneOptions(PerGameCommonOptions):
     rock_video_sanity: RockVideoSanity
     exclude_t_rank_rock_video: ExcludeTRankRockVideo
     exclude_z_rank_rock_video: ExcludeZRankRockVideo
+    
+    # In-Game Config
+    master_volume: MasterVolume
+    music_volume: MusicVolume
+    sfx_volume: SFXVolume
+    simplify_vfx: SimplifyVFX
+    disable_shakes: DisableShakes
+    auto_run: AutoRun
+    voice_clips: VoiceClips
+    feather_controls: FeatherControls
 
     # Logic Difficulty
     speedrun_gliches_as_logic: SpeedrunGlitchesAsLogic

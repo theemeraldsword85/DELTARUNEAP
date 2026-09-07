@@ -325,6 +325,15 @@ class DeltaruneWorld(World):
                 "rock_video_sanity",
                 "exclude_t_rank_rock_video",
                 "exclude_z_rank_rock_video",
+                # In-Game Config
+                "master_volume",
+                "music_volume",
+                "sfx_volume",
+                "simplify_vfx",
+                "disable_shakes",
+                "auto_run",
+                "voice_clips",
+                "feather_controls",
                 # Logic Difficulty
                 "speedrun_gliches_as_logic",
                 "nohit_as_logic",
