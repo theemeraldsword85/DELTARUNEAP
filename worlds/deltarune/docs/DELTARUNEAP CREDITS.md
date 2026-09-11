@@ -9,7 +9,7 @@
 - Mewlif
 - [Deadzi](https://github.com/Deadzi06)
 - [Vintagix](https://github.com/VintagixDev)
-- [TerraFail451](https://github.com/TerraFail451)
+- [TerraFrost](https://github.com/TerraFail451)
 
 ### Sprite Artist
 - [Charaster](https://github.com/Charaster-Official)
