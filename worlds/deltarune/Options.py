@@ -937,11 +937,20 @@ deltarune_option_groups = [
         ],
     ),
     OptionGroup(
-        "Gameplay", [BetterOdds, ItemBalancing, RemoveStartingEquipment, UnnerfPinkTwinRibbon, RockVideoSanity]
+        "Gameplay",
+        [
+            BetterOdds,
+            ItemBalancing,
+            RemoveStartingEquipment,
+            UnnerfPinkTwinRibbon,
+            RockVideoSanity,
+            ExcludeZRankRockVideo,
+            ExcludeTRankRockVideo,
+        ],
     ),
     OptionGroup(
         "Logic Difficulty",
-        [SpeedrunGlitchesAsLogic, NoHitAsLogic, AnnoyingFarmingAsLogic, ExcludeZRankRockVideo, ExcludeTRankRockVideo],
+        [SpeedrunGlitchesAsLogic, NoHitAsLogic, AnnoyingFarmingAsLogic],
     ),
     OptionGroup("Links", [DeathLink, DeathLinkGroup, DamageLink, DamageLinkGroup]),
     OptionGroup(

@@ -19,7 +19,7 @@ from MultiServer import mark_raw, Context, Client, Endpoint
 from Utils import async_start, logging
 from worlds.deltarune.LinuxProxy import encode, proxy, proxy_loop
 
-ap_world_version = "v2.2.0"
+ap_world_version = "v2.2.1"
 deltarune_mod_github = "https://github.com/Tenebrosful/DeltaruneAP-mod/releases"
 
 DEBUG = True
