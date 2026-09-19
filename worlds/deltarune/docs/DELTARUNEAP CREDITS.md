@@ -35,6 +35,9 @@
 ### Certain QOL features \& Kris's Room
 - [FLB Practice Mod](https://github.com/nhaar/flb-mod)
 
+### Proxy
+- [PizzaTower ApWorld](https://github.com/unsafetyskizzers/Archipelago)
+
 ## Notable Play Testers
 
 (I think I got most people. Some are not mentioned but that's because they have already been mentioned as contributors.)
