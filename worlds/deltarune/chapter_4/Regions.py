@@ -90,6 +90,9 @@ def create_regions(world: "DeltaruneWorld"):
     third_sanctuary.connect(second_sanctuary, rule=have_kris_susie_or_ralsei)
     third_sanctuary.connect(second_sanctuary_post_wicabel, rule=have_kris_susie_or_ralsei)
 
+    # You can also just return back to dark sanctuary if you got there with wrong warps and no characters
+    third_sanctuary.connect(dark_sanctuary)
+
     dark_sanctuary.connect(old_man_shop)
     dark_sanctuary.connect(dark_sanctuary_claimbclaws, rule=Has(items[ItemIDs.claimbclaws]))
 
