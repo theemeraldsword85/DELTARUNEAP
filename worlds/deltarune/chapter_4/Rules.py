@@ -56,7 +56,7 @@ def set_rules(world: "DeltaruneWorld"):
 
     world.set_rule(  # You can get this by doing dark sanctuary skip, so it's glitched
         world.get_location(locations[LocationIDs.ch4_dark_sanctuary_jackenstein_gift]),
-        have_kris | speedrun_glitch_logic,
+        have_kris | (speedrun_glitch_logic & Has(items[ItemIDs.claimbclaws]))
     )
 
     world.set_rule(world.get_location(locations[LocationIDs.ch4_dark_sanctuary_climbing_tutorial_chest]), have_kris)
