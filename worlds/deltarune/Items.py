@@ -100,7 +100,7 @@ class ItemIDs(IntEnum):
     execbuffet = 38
     deluxedinner = 39
     punchbowl = 40
-    flavinge = 41
+    flavigne = 41
     greentea = 42
     orangejuice = 43
 
@@ -483,7 +483,7 @@ items = {
     ItemIDs.pinkkey: "MysteryKey",
     ItemIDs.chapter_5_unlock: "Chapter 5 Unlock",
     ItemIDs.punchbowl: "PunchBowl",
-    ItemIDs.flavinge: "Flavinge",
+    ItemIDs.flavigne: "Flavigne",
     ItemIDs.greentea: "GreenTea",
     ItemIDs.orangejuice: "OrangeJuice",
     ItemIDs.schadenbrot: "SchadenBrot",

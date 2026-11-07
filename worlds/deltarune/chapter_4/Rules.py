@@ -15,6 +15,7 @@ from worlds.deltarune.LogicHelper import (
 from worlds.deltarune.Rules import (
     have_susie,
     have_kris,
+    have_kris_susie_or_ralsei,
     have_actions,
     have_ralsei,
     can_recruit_guei,
@@ -46,7 +47,7 @@ def set_rules(world: "DeltaruneWorld"):
         world.get_location(locations[LocationIDs.ch4_castle_town_lanino_elnina_challenge]),
         (
             (have_kris | (have_actions & (have_susie | have_ralsei)))
-                | annoying_farming_logic # You can fight them but it's really long and annoying
+                | (annoying_farming_logic & have_kris_susie_or_ralsei) # You can fight them but it's really long and annoying
         ),
     )
 

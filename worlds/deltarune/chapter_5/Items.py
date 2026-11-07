@@ -25,7 +25,7 @@ if TYPE_CHECKING:
     from .. import DeltaruneWorld
 
 chapter5_items = [
-    ItemData(ItemIDs.flavinge, ItemClassification.filler, groups=[ItemGroups.healing_item]),
+    ItemData(ItemIDs.flavigne, ItemClassification.filler, groups=[ItemGroups.healing_item]),
     ItemData(ItemIDs.greentea, ItemClassification.filler, groups=[ItemGroups.healing_item]),
     ItemData(ItemIDs.revivemint, ItemClassification.filler, groups=[ItemGroups.healing_item]),
     ItemData(ItemIDs.spincake, ItemClassification.filler, groups=[ItemGroups.healing_item]),
