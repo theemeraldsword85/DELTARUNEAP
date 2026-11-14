@@ -266,14 +266,6 @@ class DeltaruneWorld(World):
                 "options_creator_reminder",
                 "progression_balancing",
                 "accessibility",
-                "have_starwalker",
-                "shuffle_ost",
-                # Goal
-                "chosen_route",
-                "recruits_sanity",
-                "lose_recruits_sanity",
-                "randomize_secret_bosses",
-                "macguffin_extra",
                 # Chapters
                 "randomize_chapters",
                 "random_safety_chapter_inclusion",
@@ -296,7 +288,6 @@ class DeltaruneWorld(World):
                 "physical_challenge_rank_sanity",
                 "exclude_t_rank_physical_challenge",
                 "exclude_z_rank_physical_challenge",
-                "allow_doom_board_without_all_characters",
                 # Chapter 4
                 "include_chapter_4",
                 "macguffin_chapter_4",
@@ -305,6 +296,12 @@ class DeltaruneWorld(World):
                 # Chapter 5
                 "include_chapter_5",
                 "macguffin_chapter_5",
+                # Goal
+                "chosen_route",
+                "recruits_sanity",
+                "lose_recruits_sanity",
+                "randomize_secret_bosses",
+                "macguffin_extra",
                 # Items
                 "include_hidden_items",
                 "include_secret_bosses_items_requirement",
@@ -315,10 +312,11 @@ class DeltaruneWorld(World):
                 "progressive_susie_weapons",
                 "progressive_ralsei_weapons",
                 "progressive_noelle_weapons",
-                "unlock_characters",
-                "start_with_random_character",
                 "unlock_fun_gang_actions",
+                "progressive_area_unlocks",
                 # Gameplay
+                "have_starwalker",
+                "shuffle_ost",
                 "better_odds",
                 "remove_starting_equipment",
                 "item_balancing",
@@ -328,8 +326,12 @@ class DeltaruneWorld(World):
                 "exclude_z_rank_rock_video",
                 # Logic Difficulty
                 "speedrun_gliches_as_logic",
-                "nohit_as_logic",
                 "annoying_farming_as_logic",
+                # Unlock Characters
+                "unlock_characters",
+                "start_with_random_character",
+                "nohit_as_logic",
+                "allow_doom_board_without_all_characters",
                 # Links
                 "death_link",
                 "death_link_group",

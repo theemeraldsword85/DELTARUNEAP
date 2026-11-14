@@ -18,6 +18,8 @@ from worlds.deltarune.LogicHelper import (
     include_unused_items,
     not_weird_route_only,
     randomized_chapters,
+    progressive_area_unlocks,
+    not_progressive_area_unlocks,
 )
 from worlds.deltarune.Options import ChosenRoute
 
@@ -77,6 +79,13 @@ chapter5_items = [
         ItemIDs.mistlewp, ItemClassification.useful, groups=[ItemGroups.weapons, ItemGroups.ralsei_weapons], amount=1
     ),
     ItemData(
+        ItemIDs.progressive_ch5_area_unlock, 
+        ItemClassification.progression,
+        groups=[ItemGroups.region_blockers, ItemGroups.progressive_area_unlocks], 
+        should_be_included=progressive_area_unlocks,
+        amount=3
+    ),
+    ItemData(
         ItemIDs.gildedrose,
         ItemClassification.useful,
         should_be_included=include_unused_items,
@@ -91,12 +100,26 @@ chapter5_items = [
         blacklist_filler=True,
         changing_classification=True,
     ),
-    ItemData(ItemIDs.petalfeather, ItemClassification.progression, groups=[ItemGroups.region_blockers], amount=1),
     ItemData(
-        ItemIDs.compliment_list_yellow, ItemClassification.progression, groups=[ItemGroups.region_blockers], amount=1
+        ItemIDs.petalfeather, 
+        ItemClassification.progression, 
+        groups=[ItemGroups.region_blockers], 
+        should_be_included=not_progressive_area_unlocks,
+        amount=1
     ),
     ItemData(
-        ItemIDs.compliment_list_green, ItemClassification.progression, groups=[ItemGroups.region_blockers], amount=1
+        ItemIDs.compliment_list_yellow, 
+        ItemClassification.progression, 
+        groups=[ItemGroups.region_blockers], 
+        should_be_included=not_progressive_area_unlocks,
+        amount=1
+    ),
+    ItemData(
+        ItemIDs.compliment_list_green, 
+        ItemClassification.progression, 
+        groups=[ItemGroups.region_blockers], 
+        should_be_included=not_progressive_area_unlocks,
+        amount=1
     ),
     ItemData(
         ItemIDs.jarona_lesson,

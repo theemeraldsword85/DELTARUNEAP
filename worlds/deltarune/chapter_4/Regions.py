@@ -79,12 +79,14 @@ def create_regions(world: "DeltaruneWorld"):
     # If you get the claimbclaws, you can recreate a save to skip Dark Sanctuary but require Kris or Susie for Wingblade fight.
     castle_town.connect(
         second_sanctuary,
-        rule=Has(items[ItemIDs.claimbclaws]) & knight_climb & have_kris_or_susie & speedrun_glitch_logic,
+        rule=(Has(items[ItemIDs.claimbclaws]) | Has(items[ItemIDs.progressive_ch4_area_unlock], 1))
+        & knight_climb & have_kris_or_susie & speedrun_glitch_logic,
     )
     # If you can go to the Second Sanctuary with the previous rule, then you can Wrong Warp to skip Second Sanctuary
     castle_town.connect(
         third_sanctuary,
-        rule=Has(items[ItemIDs.claimbclaws]) & knight_climb & speedrun_glitch_logic,
+        rule=(Has(items[ItemIDs.claimbclaws]) | Has(items[ItemIDs.progressive_ch4_area_unlock], 1))
+        & knight_climb & speedrun_glitch_logic,
     )
     # However, you can return later with everyone, so ralsei can be there instead
     third_sanctuary.connect(second_sanctuary, rule=have_kris_susie_or_ralsei)
@@ -94,13 +96,16 @@ def create_regions(world: "DeltaruneWorld"):
     third_sanctuary.connect(dark_sanctuary)
 
     dark_sanctuary.connect(old_man_shop)
-    dark_sanctuary.connect(dark_sanctuary_claimbclaws, rule=Has(items[ItemIDs.claimbclaws]))
+    dark_sanctuary.connect(dark_sanctuary_claimbclaws, 
+        rule=Has(items[ItemIDs.claimbclaws]) | Has(items[ItemIDs.progressive_ch4_area_unlock], 1)
+    )
 
     # Require Kris for Knight climb, require Susie for Sound of Justice
     # You can't leave second sanctuary once you enter unless you can beat SoJ so we put the block before
     dark_sanctuary_claimbclaws.connect(
         second_sanctuary,
-        rule=Has(items[ItemIDs.sheetmusic]) & knight_climb & (have_kris_and_susie | Has(glitched_item_name)),
+        rule=(Has(items[ItemIDs.sheetmusic]) | Has(items[ItemIDs.progressive_ch4_area_unlock], 2))
+        & knight_climb & (have_kris_and_susie | Has(glitched_item_name)),
     )
     dark_sanctuary_claimbclaws.connect(gerson, rule=have_kris & (have_susie | nohit_logic)) # Kris needs to beat jack first if you don't skip dark sanctuary
 

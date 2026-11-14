@@ -80,7 +80,8 @@ def create_regions(world: "DeltaruneWorld"):
     # Bake Sale Ticket is required to enter and Kris or Ralsei is required for Clover fight unless you do ARMS glitch
     forest.connect(
         bake_sale,
-        rule=Has(items[ItemIDs.bake_sale_ticket]) & have_kris_or_ralsei,
+        rule=(Has(items[ItemIDs.bake_sale_ticket]) | Has(items[ItemIDs.progressive_ch1_area_unlock], 1))
+        & have_kris_or_ralsei,
     )
 
     forest.connect(
@@ -96,7 +97,7 @@ def create_regions(world: "DeltaruneWorld"):
     # Castle key is required with Kris or Ralsei to Vs. Susie and lancer fight
     forest_post_bake_sale.connect(
         card_castle,
-        rule=Has(items[ItemIDs.castle_key]) & have_kris_or_ralsei,
+        rule=(Has(items[ItemIDs.castle_key]) | Has(items[ItemIDs.progressive_ch1_area_unlock], 2)) & have_kris_or_ralsei,
     )
 
     # Door key is required with Kris, Susie or Ralsei

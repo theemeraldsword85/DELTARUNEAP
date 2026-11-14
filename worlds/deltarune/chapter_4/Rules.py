@@ -52,7 +52,8 @@ def set_rules(world: "DeltaruneWorld"):
     )
 
     world.set_rule(
-        world.get_location(locations[LocationIDs.ch4_third_sanctuary_annoying_dog]), Has(items[ItemIDs.sheetmusic])
+        world.get_location(locations[LocationIDs.ch4_third_sanctuary_annoying_dog]), 
+        Has(items[ItemIDs.sheetmusic]) | Has(items[ItemIDs.progressive_ch4_area_unlock], 2)
     )
 
     world.set_rule(  # You can get this by doing dark sanctuary skip, so it's glitched

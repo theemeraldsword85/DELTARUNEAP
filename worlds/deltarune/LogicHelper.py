@@ -300,6 +300,14 @@ def progressive_weapons_ralsei(world: "DeltaruneWorld"):
 def progressive_weapons_noelle(world: "DeltaruneWorld"):
     return world.options.progressive_noelle_weapons.value == 1 and included_chapter(world, 2)
 
+def progressive_area_unlocks(world: "DeltaruneWorld"):
+    return world.options.progressive_area_unlocks.value == 1
+
+def not_progressive_area_unlocks(world: "DeltaruneWorld"):
+    return world.options.progressive_area_unlocks.value == 0
+
+def normal_route_and_not_progressive_area_unlocks(world: "DeltaruneWorld"):
+    return world.options.progressive_area_unlocks.value == 0 and normal_route(world)
 
 def include_characters(world: "DeltaruneWorld"):
     return world.options.unlock_characters.value in [

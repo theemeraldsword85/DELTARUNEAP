@@ -82,7 +82,8 @@ def create_regions(world: "DeltaruneWorld"):
 
     castle_town.connect(dojo)
 
-    # Require actions and at least one character for DJ-fight unless you ww into the fight (but can't end it) or Bagel Overflow to mansion and come back with plot value updated
+    # Require actions and at least one character for DJ-fight unless you ww into the fight (but can't end it)
+    # or Bagel Overflow to mansion and come back with plot value updated
     cyber_field.connect(
         cyber_field_post_dj,
         rule=(have_actions & have_kris_susie_or_ralsei),
@@ -96,7 +97,7 @@ def create_regions(world: "DeltaruneWorld"):
     # Require Safety vest and at least one character for berdly fight or Bagel Overflow to Trash Zone
     cyber_field_post_dj.connect(
         trash_zone_no_character_requirement,
-        rule=(Has(items[ItemIDs.safety_vest]) & have_kris_susie_or_ralsei),
+        rule=((Has(items[ItemIDs.safety_vest]) | Has(items[ItemIDs.progressive_ch2_area_unlock], 1))) & have_kris_susie_or_ralsei,
     )
 
     if normal_route(world):
@@ -193,7 +194,7 @@ def create_regions(world: "DeltaruneWorld"):
         )
         mansion_lobby_main_route.connect(
             mansion_main_route,
-            rule=Has(items[ItemIDs.mansion_reservation]),
+            rule=Has(items[ItemIDs.mansion_reservation]) | Has(items[ItemIDs.progressive_ch2_area_unlock], 2),
         )
 
         mansion_main_route.connect(mansion_recruits)
