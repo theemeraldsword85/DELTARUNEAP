@@ -877,20 +877,32 @@ class SpeedrunGlitchesAsLogic(Toggle):
     default = 0
 
 
-class NoHitAsLogic(Toggle):
+class NoHitAsLogic(Choice):
     """
     SHOULD YOU HAVE NO CHARACTERS, TAKING NO DAMAGE WILL BE EXPECTED.
 
     (Fights or sections that require you no no-hit them will now be in logic.)
-    (This includes: Mike fight, Knight Climb, Hammer of Justice, Aqua.)
-    (Reminder that Chapter 1 Lancer fight is always in logic no-hit.)
-    **(ONLY TURN THIS TO TRUE IF YOU ARE EXTREMELY SKILLED AT THE GAME.)**
-
-    *(Of course, this only applies if you set Unlock Characters to true.)*
+    (Easy: Chapter 1 Lancer Spade Brigade, First Lancer, Susie vs. Lancer, Tropical Starwalker Pink Coin, Chapter 4 Knight Climb)
+    (Hard: Mike fight, Chapter 2 Rouxls Fight, Aqua)
+    (Extreme: Hammer of Justice)
+    (Remember, Hammer of Justice without Susie also requires doing the extra attacks to gain stars.)
+    **(ONLY TURN THIS TO ON IF YOU ARE EXTREMELY SKILLED AT THE GAME.)**
+    *(And of course, this only applies if you set Unlock Characters to true.)*
     """
 
     display_name = "[HARD MODE] No Hit as Logic"
-    default = 0
+    option_none = 0
+    option_easy = 1
+    option_hard = 2
+    option_extreme = 3
+    default = option_easy
+
+
+class NoHitAsLogicOptions(StrEnum):
+    none = "None"
+    easy = "Easy"
+    hard = "Hard"
+    extreme = "Extreme"
 
 
 class AnnoyingFarmingAsLogic(Toggle):

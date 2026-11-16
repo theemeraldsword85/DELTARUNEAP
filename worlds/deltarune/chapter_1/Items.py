@@ -55,21 +55,21 @@ chapter1_items = [
         ItemIDs.bake_sale_ticket, 
         ItemClassification.progression, 
         groups=[ItemGroups.region_blockers], 
-        should_be_included=progressive_area_unlocks,
+        should_be_included=not_progressive_area_unlocks,
         amount=1
     ),
     ItemData(
         ItemIDs.castle_key, 
         ItemClassification.progression,
         groups=[ItemGroups.region_blockers], 
-        should_be_included=progressive_area_unlocks,
+        should_be_included=not_progressive_area_unlocks,
         amount=1
     ),
     ItemData(
         ItemIDs.progressive_ch1_area_unlock, 
         ItemClassification.progression,
         groups=[ItemGroups.region_blockers, ItemGroups.progressive_area_unlocks], 
-        should_be_included=not_progressive_area_unlocks,
+        should_be_included=progressive_area_unlocks,
         amount=2
     ),
     ItemData(ItemIDs.brokencake, ItemClassification.progression, amount=1),

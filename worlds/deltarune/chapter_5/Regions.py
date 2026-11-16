@@ -19,7 +19,7 @@ from worlds.deltarune.Rules import (
     have_kris_susie_or_ralsei,
     have_kris_susie_and_ralsei,
     have_kris,
-    nohit_logic,
+    nohit_hard_logic,
 )
 
 if TYPE_CHECKING:
@@ -108,7 +108,7 @@ def create_regions(world: "DeltaruneWorld"):
         )
 
         # aqua fight needs kris, though you can beat her by no hitting
-        dark_garden.connect(garden_aqua, rule=(have_kris | nohit_logic))
+        dark_garden.connect(garden_aqua, rule=(have_kris | nohit_hard_logic))
 
         garden_aqua.connect(dark_garden_petal_feather, 
             rule=Has(items[ItemIDs.petalfeather]) | Has(items[ItemIDs.progressive_ch5_area_unlock], 1)

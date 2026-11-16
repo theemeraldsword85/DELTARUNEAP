@@ -397,10 +397,14 @@ def all_included_chapter(world: "DeltaruneWorld", chapters: list[int]):
 def is_speedrun_logic(world: "DeltaruneWorld") -> bool:
     return world.options.speedrun_gliches_as_logic == 1
 
+def nohit_easy_as_logic(world: "DeltaruneWorld") -> bool:
+    return world.options.nohit_as_logic.value >= IncludeUnusedItems.option_easy
 
-def is_nohit_logic(world: "DeltaruneWorld") -> bool:
-    return world.options.nohit_as_logic == 1
+def nohit_hard_as_logic(world: "DeltaruneWorld") -> bool:
+    return world.options.nohit_as_logic.value >= IncludeUnusedItems.option_hard
 
+def nohit_extreme_as_logic(world: "DeltaruneWorld") -> bool:
+    return world.options.nohit_as_logic.value >= IncludeUnusedItems.option_extreme
 
 def is_annoying_logic(world: "DeltaruneWorld") -> bool:
     return world.options.annoying_farming_as_logic == 1

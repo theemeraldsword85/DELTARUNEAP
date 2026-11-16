@@ -23,7 +23,8 @@ from worlds.deltarune.Rules import (
     have_kris_susie_or_ralsei,
     have_noelle,
     speedrun_glitch_logic,
-    nohit_logic,
+    nohit_easy_logic,
+    nohit_hard_logic,
 )
 from worlds.deltarune.Items import items, ItemIDs, glitched_item_name
 from worlds.deltarune.Locations import LocationIDs, locations
@@ -199,7 +200,7 @@ def create_regions(world: "DeltaruneWorld"):
 
         mansion_main_route.connect(mansion_recruits)
         mansion_main_route.connect(mansion_both_route)
-        mansion_main_route.connect(tunnel_of_love, rule=have_kris_or_ralsei | nohit_logic)
+        mansion_main_route.connect(tunnel_of_love, rule=have_kris_or_ralsei | nohit_hard_logic)
 
         tunnel_of_love.connect(recruit_werewerewire)
 

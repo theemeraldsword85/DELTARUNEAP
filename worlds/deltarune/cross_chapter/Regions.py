@@ -13,7 +13,6 @@ from worlds.deltarune.Items import items, ItemIDs
 if TYPE_CHECKING:
     from .. import DeltaruneWorld
 
-
 def create_regions(world: "DeltaruneWorld"):
     chapter_select = Region(Regions.chapter_select, world.player, world.multiworld)
     fusion = Region(Regions.fusion, world.player, world.multiworld)
