@@ -130,7 +130,7 @@ class ExcludeTRankRockVideo(Toggle):
     """
     THE HIGHEST RANK OF THE CONCERTS WILL BE EXCLUDED FROM CONTAINING AN IMPORTANT ITEM.
 
-    (Of course, this only applies if you set Rocky Video Sanity to true.)
+    (Of course, this only applies if you set Rock Video Sanity to true.)
     """
 
     display_name = "Exclude T Rank for rock video"
@@ -142,7 +142,7 @@ class ExcludeZRankRockVideo(Toggle):
     THE LOWEST RANK OF THE CONCERTS WILL BE EXCLUDED FROM CONTAINING AN IMPORTANT ITEM.
 
     (Since Z-Rank is practically impossible on hard difficulty, those are not included.)
-    (Of course, this only applies if you set Rocky Video Sanity to true.)
+    (Of course, this only applies if you set Rock Video Sanity to true.)
     """
 
     display_name = "Exclude Z Rank for rock video"
