@@ -78,7 +78,7 @@ def create_regions(world: "DeltaruneWorld"):
             Has(items[ItemIDs.chapter_5_unlock])
             | OptionFilter(RandomizeChapters, RandomizeChapters.option_all_unlocked),
         )
-        if world.options.chosen_route.value != ChosenRoute.option_weird_route:
+        if world.options.chosen_route.value != ChosenRoute.option_side_b:
             chapter_5.connect(fusion)
             chapter_5.connect(ch5_fusion)
             chapter_5.connect(rock_video)

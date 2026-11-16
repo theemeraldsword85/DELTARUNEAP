@@ -119,7 +119,7 @@ can_recruit_tasque_manager = (
         have_kris_susie_or_ralsei
         & OptionFilter(
             ChosenRoute,
-            [ChosenRoute.option_all_recruits, ChosenRoute.option_both_all_recruits_and_weird_route],
+            [ChosenRoute.option_all_recruits, ChosenRoute.option_both_all_recruits_and_side_b],
             operator="in",
         )
     )

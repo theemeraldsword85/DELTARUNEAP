@@ -279,16 +279,16 @@ class ChosenRoute(Choice):
     """
     CHOOSE THE ROUTE THAT YOU PREFER.
 
-    - **Normal Route** *Progress through the story normally.*
-    - **Weird Route** *Proceed through the "Weird Route" storyline. Can we rename this to Side B yet*
+    - **Normal Route** *Progress through the story normally. It doesn't matter who you do or don't recruit.*
+    - **Side B** *Proceed through the Side B storyline. (Also known as Weird Route)*
     - **All Recruits** *Progress through the story normally, but you have to recruit everyone to complete the chapter.*
     - **Both Routes** *Beat each chapter with All Recruits, as well as chapter 2 and 5 a second time for their Side B ending.*
     """
 
     display_name = "Chosen Route"
     option_all_recruits = 0
-    option_weird_route = 1
-    option_both_all_recruits_and_weird_route = 2
+    option_side_b = 1
+    option_both_all_recruits_and_side_b = 2
     option_normal_route = 3
     default = option_normal_route
 
@@ -298,7 +298,7 @@ class RecruitsSanity(Toggle):
     WILL GAINING RECRUITS COUNT AS LOCATIONS?
 
     (Forced enabled if All recruits is selected.)
-    (If you choose Weird Route, specifically the recruits in Cyber City will be force disabled.)
+    (If you choose Side B, specifically the recruits in Cyber City will be force disabled.)
     """
 
     display_name = "Recruits Sanity"
@@ -309,7 +309,7 @@ class LoseRecruitsSanity(Toggle):
     """
     WILL LOSING RECRUITS COUNT AS LOCATIONS?
 
-    (If you choose Weird Route, specifically the recruits you lose in Cyber City will be force enabled to avoid a generation fail.)
+    (If you choose Side B, specifically the recruits you lose in Cyber City will be force enabled to avoid a generation fail.)
     """
 
     display_name = "Lose recruits Sanity"
@@ -867,7 +867,7 @@ class SpeedrunGlitchesAsLogic(Toggle):
     (All reasonable glitches will now be in logic.)
     (This includes: Wrong Warp, Bagel Overflow, interaction slide, etc.)
     (This doesn't includes: ARMS)
-    (This will also add locations that can be obtained with Singapore Wrong Warp in chapter 2 Weird Route.)
+    (This will also add locations that can be obtained with Singapore Wrong Warp in chapter 2 Side B.)
     (Do not forget to have multiple saves to keep access to earlier events that may not happen anymore if the plot value updates.)
     (Reminder that Bagel Overflow was re-implemented.)
     **(ONLY TURN THIS TO TRUE IF YOU ARE KNOWLEDGEABLE.)**
@@ -1110,5 +1110,5 @@ class DeltaruneOptions(PerGameCommonOptions):
 
 options_presets = {
     "Classic All Recruits": {"chosen_route": "all_recruits", "recruits_sanity": True},
-    "Classic Weird Route": {"chosen_route": "weird_route", "recruits_sanity": False, "lose_recruits_sanity": True},
+    "Classic Side B": {"chosen_route": "side_b", "recruits_sanity": False, "lose_recruits_sanity": True},
 }

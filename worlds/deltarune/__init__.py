@@ -588,7 +588,7 @@ class DeltaruneWorld(World):
             )
         if (
             included_chapter(self, 5)
-            and self.options.chosen_route.value != ChosenRoute.option_weird_route
+            and self.options.chosen_route.value != ChosenRoute.option_side_b
             and self.options.macguffin_chapter_5.value > 0
         ):
             item_data = next((item_data for item_data in item_pool if item_data.code == ItemIDs.jarona_lesson), None)

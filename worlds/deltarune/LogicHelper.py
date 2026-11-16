@@ -188,31 +188,31 @@ def have_access_to_rock_video(world: "DeltaruneWorld") -> bool:
 
 def weird_route(world: "DeltaruneWorld") -> bool:
     return world.options.chosen_route.value in [
-        ChosenRoute.option_weird_route,
-        ChosenRoute.option_both_all_recruits_and_weird_route,
+        ChosenRoute.option_side_b,
+        ChosenRoute.option_both_all_recruits_and_side_b,
     ]
 
 
 def not_weird_route_only(world: "DeltaruneWorld") -> bool:
-    return world.options.chosen_route.value != ChosenRoute.option_weird_route
+    return world.options.chosen_route.value != ChosenRoute.option_side_b
 
 
 def all_recruits_route(world: "DeltaruneWorld") -> bool:
     return world.options.chosen_route.value in [
         ChosenRoute.option_all_recruits,
-        ChosenRoute.option_both_all_recruits_and_weird_route,
+        ChosenRoute.option_both_all_recruits_and_side_b,
     ]
 
 
 def both_routes(world: "DeltaruneWorld") -> bool:
-    return world.options.chosen_route == ChosenRoute.option_both_all_recruits_and_weird_route
+    return world.options.chosen_route == ChosenRoute.option_both_all_recruits_and_side_b
 
 
 def normal_route(world: "DeltaruneWorld") -> bool:
     return world.options.chosen_route.value in [
         ChosenRoute.option_all_recruits,
         ChosenRoute.option_normal_route,
-        ChosenRoute.option_both_all_recruits_and_weird_route,
+        ChosenRoute.option_both_all_recruits_and_side_b,
     ]
 
 
@@ -357,14 +357,14 @@ def excluded_z_rank_physical_challenge(world: "DeltaruneWorld") -> bool:
 
 
 def can_access_fusion(world: "DeltaruneWorld"):
-    if world.options.chosen_route.value == ChosenRoute.option_weird_route:
+    if world.options.chosen_route.value == ChosenRoute.option_side_b:
         return any_included_chapter(world, [2, 4])
     else:
         return any_included_chapter(world, [2, 4, 5])
 
 
 def can_access_fusion_post_chapter_5(world: "DeltaruneWorld"):
-    if world.options.chosen_route.value == ChosenRoute.option_weird_route:
+    if world.options.chosen_route.value == ChosenRoute.option_side_b:
         return False
     else:
         return any_included_chapter(world, [5])

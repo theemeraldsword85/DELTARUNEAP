@@ -194,7 +194,7 @@ chapter5_items = [
 
 
 def create_items(world: "DeltaruneWorld") -> list[DeltaruneItem]:
-    if world.options.chosen_route.value == ChosenRoute.option_weird_route:
+    if world.options.chosen_route.value == ChosenRoute.option_side_b:
         return generic_create_items(
             world,
             [
@@ -212,6 +212,6 @@ def create_items(world: "DeltaruneWorld") -> list[DeltaruneItem]:
 
 
 def get_filler_and_trap_items(world: "DeltaruneWorld"):
-    if world.options.chosen_route.value == ChosenRoute.option_weird_route:
+    if world.options.chosen_route.value == ChosenRoute.option_side_b:
         return []
     return generic_get_filler_and_trap_items(world, chapter5_items)
