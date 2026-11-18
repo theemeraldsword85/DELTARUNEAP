@@ -267,6 +267,8 @@ Both gaining and losing recruits have been turned into checks."""
 
 class DeltaruneContext(SuperContext):
     tags = {"TextOnly"}
+    if tracker_loaded:
+        tags.add("Tracker")
     game = "DELTARUNE"
     command_processor = DeltaruneCommandProcessor
     items_handling = 0b111

@@ -105,11 +105,11 @@ In Chapter 5, Flowery will supply you with one if you lose a battle or when reac
 
 Play through the story normally! You can either recruit or lose Darkners. Reaching the fountain is your main goal. 
 
-### Weird Route / Side B
+### Side B
 
-In a future update I'll probably replace Weird Route with its proper name, Side B.
+(Also referred to as Weird Route)
 
-Proceed through the Side B storyline. Starting up a new save will automatically put you into the normal amount of Side B progression that you'd start the chapter in. While Chapter 4 does have its own cutscene, it isn't required to do, as there are no locations locked behind it. 
+Proceed through the Side B storyline. Starting up a new save will automatically put you into the normal amount of Side B progression that you'd start the chapter in. While Chapter 4 does have its own cutscene, it isn't required to do (since it otherwise has no strategy or real gameplay to it), and there are no locations locked behind it. 
 
 If this is your first time doing Side B (or if you forgot how), there are many walkthroughs on YouTube and other sites. This route is pretty hidden and easy to accidentally abort if you don't know how to do it properly!
 
