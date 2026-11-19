@@ -123,7 +123,7 @@ You can check your progress at each save point, and each chapter will let you kn
 
 ### Both Routes
 
-It combines both Weird Route/Side B and All Recruits as explained above. Press K on the Chapter select screen to switch the route that the save file will begin with. Chapters 1, 3, and 4 only have to be done once, as they don't have too major of changes in the Dark World.
+It combines both Side B and All Recruits as explained above. Press K on the Chapter select screen to switch the route that the save file will begin with. Chapters 1, 3, and 4 only have to be done once, as they don't have too major of changes in the Dark World.
 
 ## Universal Tracker Support
 

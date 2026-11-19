@@ -100,7 +100,7 @@ def create_regions(world: "DeltaruneWorld"):
         card_castle,
         rule=(Has(items[ItemIDs.castle_key]) | Has(items[ItemIDs.progressive_ch1_area_unlock], 2)) 
         & have_kris_or_ralsei
-        & have_susie | nohit_easy_logic,
+        & (have_susie | nohit_easy_logic),
     )
 
     # Door key is required with Kris, Susie or Ralsei
