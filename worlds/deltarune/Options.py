@@ -53,7 +53,7 @@ class OptionsCreatorReminder(Choice): # Yeah, I can't believe we need this eithe
     CONTEMPLATE THE TEXT ACCORDINGLY AND MAKE YOUR CHOICE.
 
     (If you editing this with notepad or something instead of Options Creator, you can ignore the above.)
-    (Also a reminder to read the Q&A as listed on the GitHub Releases page! They provide futher insight on options/game changes.)
+    (Also a reminder to read the Q&A listed on the GitHub Releases page! It provides futher insight on options/game changes.)
     """
 
     display_name = "(Hover Over to) Read Option Descriptions"
@@ -883,7 +883,7 @@ class NoHitAsLogic(Choice):
 
     (Fights or sections that require you no no-hit them will now be in logic.)
     (Easy: Chapter 1 Lancer Spade Brigade, First Lancer, Susie vs. Lancer, Tropical Starwalker Pink Coin, Chapter 4 Knight Climb)
-    (Hard: Mike fight, Chapter 2 Rouxls Fight, Aqua)
+    (Hard: Mike fight, Chapter 2 Rouxls Fight, Aqua, Mansion Basement Teacup Ride)
     (Extreme: Hammer of Justice)
     (Remember, Hammer of Justice without Susie also requires doing the extra attacks to gain stars.)
     **(ONLY TURN THIS TO ON IF YOU ARE EXTREMELY SKILLED AT THE GAME.)**
