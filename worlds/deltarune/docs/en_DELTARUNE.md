@@ -13,9 +13,8 @@ Other notable locations include:
 - Fighting Mike and playing their minigames. (Depending on options)
 - Getting Susie to finally accept her appreciation of ribbons :D
 
-**Locations are exclusive to the Dark World, as well as receiving items and Death Link. If you go to the Light World, return to the Dark World to get locations/items.**
-
-**Remember that you will be expected to go between chapters a lot, especially if you have chosen to have chapters Randomized or All Unlocked.**
+> [!IMPORTANT]
+> Locations are exclusive to the Dark World, as well as receiving items and Death Link. If you go to the Light World, return to the Dark World to get locations/items.
 
 ## When the player receives an item, what happens?
 
@@ -35,7 +34,9 @@ This does not mean it'll be as simple as that, choosing certain options will add
 
 There are some major differences between vanilla and the randomizer.
 
-A few locations will require their own "key" to enter (Using the term key lightly as only one of these are actually traditional keys).
+### Area Unlocks
+
+A few locations will require their own item to enter, sort of like a key. These are put in place so that you need your friends to help you progress instead of being able to immediately reach the end of most chapters.
 
 Chapter 1:
 Bake Sale - "Bake Sale Ticket"
@@ -54,11 +55,17 @@ Dark Sanctuary (Second Half) - "ClaimbClaws"
 Second Sanctuary - "SheetMusic"
 
 Chapter 5:
-Cliffs - PetalFeather
-Castle East - Green Compliment List
-Castle West - Yellow Compliment List 
+Cliffs - "PetalFeather"
+Castle East - "Green Compliment List"
+Castle West - "Yellow Compliment List"
 
-As well as this, the final boss of each chapter chosen will require a certain number of items to get to.
+
+> [!TIP]
+> Set the Progressive Area Unlocks option to True if you want to get each of the area unlocks in order instead of needing to find each individually.
+
+### MacGuffin Items
+
+As well as the area unlocks, the final boss of each chapter chosen will require a certain number of items to get to.
 
 Chapter 1:
 King Fight - King-Shaped Key Pieces
@@ -75,11 +82,16 @@ Third Sanctuary Ending - Combination Lock Digits
 Chapter 5:
 Flowery Fight - Jarona Lessons
 
-By default, only Chapter 5 will have any MacGuffin items, with it having 3. If you don't want any MacGuffin items, or if you want a bunch in every chapter for some reason, you can edit this in your YAML/options. 
+> [!NOTE]
+> By default, only Chapter 5 will have any MacGuffin items, with it having 3. If you don't want any MacGuffin items, or if you want a bunch in every chapter for some reason, you can edit this in your options. 
 
 ### All Chapters
 
 Losing Recruits will no longer stop you from recruiting Darkners anymore. All one-time enemies will now respawn at or near their original location.
+
+After beating a chapter, locations that you didn't find will remain unsent. Returning to a chapter after beating it will give you all the items you have gotten in future chapters, though.
+
+Completion data is not supported, so when you beat a chapter you will be expected to start a new save in the next chapter. 
 
 ### Chapter 3
 
@@ -99,17 +111,23 @@ In Chapter 4, it's to the left of the Old Man's study.
 
 In Chapter 5, Flowery will supply you with one if you lose a battle or when reach the End of the Garden.
 
+### Secret/Shadow Crystal Bosses
+
+For Jevil and Spamton NEO, both of their items will be sent upon defeat, so you only have to fight them once.
+
 ## Chosen Route
 
 ### Normal Route
 
-Play through the story normally! You can either recruit or lose Darkners. Reaching the fountain is your main goal. 
+Play through the story normally! You can either recruit or lose Darkners, though neither is required. Reaching the fountain is your main goal. 
 
 ### Side B
 
 (Also referred to as Weird Route)
 
 Proceed through the Side B storyline. Starting up a new save will automatically put you into the normal amount of Side B progression that you'd start the chapter in. While Chapter 4 does have its own cutscene, it isn't required to do (since it otherwise has no strategy or real gameplay to it), and there are no locations locked behind it. 
+
+In Chapter 2, if you abort the route, your previous save will automatically get loaded.
 
 If this is your first time doing Side B (or if you forgot how), there are many walkthroughs on YouTube and other sites. This route is pretty hidden and easy to accidentally abort if you don't know how to do it properly!
 
@@ -125,9 +143,12 @@ You can check your progress at each save point, and each chapter will let you kn
 
 It combines both Side B and All Recruits as explained above. Press K on the Chapter select screen to switch the route that the save file will begin with. Chapters 1, 3, and 4 only have to be done once, as they don't have too major of changes in the Dark World.
 
+> [!NOTE]
+> Switching your route only occurs when the save is *created*, not if a save is already made (including duplicating saves).
+
 ## Universal Tracker Support
 
-The Text Client is fully supporting Universal Tracker. You can use the Tracker tab, UT commands and the map tab directly in DELTARUNE Text Client.
+The DELTARUNE Client fully supports Universal Tracker. You can use the Tracker tab, UT commands and the map tab directly in DELTARUNE Text Client. You even get a nifty tracker tag upon connecting!
 
 ## Unique Local Commands
 
