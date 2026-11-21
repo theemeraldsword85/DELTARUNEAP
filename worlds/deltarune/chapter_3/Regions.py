@@ -19,6 +19,7 @@ from worlds.deltarune.Rules import (
     have_kris,
     have_susie_or_ralsei,
     annoying_farming_logic,
+    nohit_extreme_logic
 )
 from worlds.deltarune.Items import items, ItemIDs, glitched_item_name
 from worlds.deltarune.Locations import LocationIDs, locations
@@ -109,7 +110,7 @@ def create_regions(world: "DeltaruneWorld"):
             Has(items[ItemIDs.shelter_key])
             & Has(items[ItemIDs.ice_key])
             & Has(items[ItemIDs.odd_controller])
-            & have_kris
+            & (have_kris | nohit_extreme_logic)
         ),
     )
     tv_world.connect(world.get_region(Regions.lost_rabbick))
