@@ -122,13 +122,13 @@ def create_regions(world: "DeltaruneWorld"):
 
         flower_castle.connect(vending_machine)
 
-        flower_castle.connect(castle_west, 
-            rule=Has(items[ItemIDs.compliment_list_yellow])
+        flower_castle.connect(castle_east,
+            rule=Has(items[ItemIDs.compliment_list_green])
             | Has(items[ItemIDs.progressive_ch5_area_unlock], 2)
         )
 
-        flower_castle.connect(castle_east,
-            rule=Has(items[ItemIDs.compliment_list_green])
+        flower_castle.connect(castle_west, 
+            rule=Has(items[ItemIDs.compliment_list_yellow])
             | Has(items[ItemIDs.progressive_ch5_area_unlock], 3)
         )
 

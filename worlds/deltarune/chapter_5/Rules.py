@@ -137,8 +137,9 @@ def handle_locked_items(world: "DeltaruneWorld"):
                 world.create_item(items[ItemIDs.pinkcoin])
             )
             world.get_location(
-                locations[LocationIDs.ch5_castle_west_yellow_flower_platforming_pink_coin]
-            ).place_locked_item(world.create_item(items[ItemIDs.pinkcoin]))
+                locations[LocationIDs.ch5_castle_west_yellow_flower_platforming_pink_coin]).place_locked_item(
+                world.create_item(items[ItemIDs.pinkcoin])
+            )
             world.get_location(locations[LocationIDs.ch5_castle_east_pink_coin_behind_paper_wall]).place_locked_item(
                 world.create_item(items[ItemIDs.pinkcoin])
             )

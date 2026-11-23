@@ -208,7 +208,7 @@ def create_regions(world: "DeltaruneWorld"):
             mansion_basement,
             rule=Has(items[ItemIDs.keygen])
             & CanReachRegion(Regions.ch2_cyber_city_post_spamton)
-            & (have_kris | Has(glitched_item_name)),
+            & (have_kris | nohit_hard_logic),
         )
         mansion_basement.connect(
             spamton_neo, get_entrance_name(mansion_basement, spamton_neo), rule=Has(items[ItemIDs.emptydisk])

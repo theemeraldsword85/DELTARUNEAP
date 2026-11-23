@@ -53,7 +53,7 @@ class OptionsCreatorReminder(Choice): # Yeah, I can't believe we need this eithe
     CONTEMPLATE THE TEXT ACCORDINGLY AND MAKE YOUR CHOICE.
 
     (If you editing this with notepad or something instead of Options Creator, you can ignore the above.)
-    (Also a reminder to read the Q&A as listed on the GitHub Releases page! They provide futher insight on options/game changes.)
+    (Also a reminder to read the Q&A listed on the GitHub Releases page! It provides futher insight on options/game changes.)
     """
 
     display_name = "(Hover Over to) Read Option Descriptions"
@@ -879,12 +879,13 @@ class SpeedrunGlitchesAsLogic(Toggle):
 
 class NoHitAsLogic(Choice):
     """
-    SHOULD YOU HAVE NO CHARACTERS, TAKING NO DAMAGE WILL BE EXPECTED.
+    SHOULD YOU HAVE NO CHARACTERS AVAILABLE, TAKING NO DAMAGE WILL BE EXPECTED.
 
-    (Fights or sections that require you no no-hit them will now be in logic.)
+    (As mentioned, upon going into a battle/overworld dodging sequence you still get one hit to live if no one in your party is unlocked.)
+    (With this option on, fights or sections that are possible by simply dodging long enough is now in logic.)
     (Easy: Chapter 1 Lancer Spade Brigade, First Lancer, Susie vs. Lancer, Tropical Starwalker Pink Coin, Chapter 4 Knight Climb)
-    (Hard: Mike fight, Chapter 2 Rouxls Fight, Aqua)
-    (Extreme: Hammer of Justice)
+    (Hard: Mike fight, Chapter 2 Rouxls Fight, Aqua, Mansion Basement Teacup Ride)
+    (Extreme: Hammer of Justice, Shadow Mantle Holder)
     (Remember, Hammer of Justice without Susie also requires doing the extra attacks to gain stars.)
     **(ONLY TURN THIS TO ON IF YOU ARE EXTREMELY SKILLED AT THE GAME.)**
     *(And of course, this only applies if you set Unlock Characters to true.)*
