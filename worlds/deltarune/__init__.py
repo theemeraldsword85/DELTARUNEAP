@@ -42,7 +42,7 @@ from worlds.deltarune.LogicHelper import (
     randomized_chapters,
     weird_route,
 )
-from worlds.deltarune.OSTRandomizer import randomizeOST
+from worlds.deltarune.OSTRandomizer import randomizeOST, randomizeOSTnongerson
 from worlds.deltarune.Options import (
     ChosenRoute,
     DeltaruneOptions,
@@ -376,6 +376,8 @@ class DeltaruneWorld(World):
             self.fill_chapter_included_array()
 
             self.randomized["ost"] = randomizeOST(self)
+
+            self.randomized["nongerson_ost"] = randomizeOSTnongerson(self)
 
             validate_options(self)
 
