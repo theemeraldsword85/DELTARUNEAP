@@ -101,6 +101,10 @@ You can also replay any board at any time with a new Pippins in the green room.
 
 Make sure to get the extra ranks during the boards (Extra Moss, Extra Key, etc.)!
 
+### Chapter 4
+
+Talking to the NPC that normally sends you back to the egg room now sends you back to the Second Sanctuary, if you missed anything there.
+
 ### Returning to Castle Town
 
 In all chapters that have Castle Town, there will be a light you can use to return to Castle Town while you're in the main Dark World.
