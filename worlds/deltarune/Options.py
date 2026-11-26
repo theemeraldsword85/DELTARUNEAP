@@ -866,7 +866,7 @@ class SpeedrunGlitchesAsLogic(Toggle):
 
     (All reasonable glitches will now be in logic.)
     (This includes: Wrong Warp, Bagel Overflow, interaction slide, etc.)
-    (This doesn't includes: ARMS)
+    (This doesn't include: ARMS)
     (This will also add locations that can be obtained with Singapore Wrong Warp in chapter 2 Side B.)
     (Do not forget to have multiple saves to keep access to earlier events that may not happen anymore if the plot value updates.)
     (Reminder that Bagel Overflow was re-implemented.)
