@@ -866,7 +866,7 @@ class SpeedrunGlitchesAsLogic(Toggle):
 
     (All reasonable glitches will now be in logic.)
     (This includes: Wrong Warp, Bagel Overflow, interaction slide, etc.)
-    (This doesn't includes: ARMS)
+    (This doesn't include: ARMS)
     (This will also add locations that can be obtained with Singapore Wrong Warp in chapter 2 Side B.)
     (Do not forget to have multiple saves to keep access to earlier events that may not happen anymore if the plot value updates.)
     (Reminder that Bagel Overflow was re-implemented.)
@@ -882,7 +882,7 @@ class NoHitAsLogic(Choice):
     SHOULD YOU HAVE NO CHARACTERS AVAILABLE, TAKING NO DAMAGE WILL BE EXPECTED.
 
     (As mentioned, upon going into a battle/overworld dodging sequence you still get one hit to live if no one in your party is unlocked.)
-    (With this option on, fights or sections that are possible by simply dodging long enough is now in logic.)
+    (With this option on, fights or sections that are possible by simply dodging long enough are now in logic.)
     (Easy: Chapter 1 Lancer Spade Brigade, First Lancer, Susie vs. Lancer, Tropical Starwalker Pink Coin, Chapter 4 Knight Climb)
     (Hard: Mike fight, Chapter 2 Rouxls Fight, Aqua, Mansion Basement Teacup Ride)
     (Extreme: Hammer of Justice, Shadow Mantle Holder)
